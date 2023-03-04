@@ -13,9 +13,11 @@ const Home = () => {
         <div className="icons-row row">
           {arrIconCard.map((card) => {
             return (
-              <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div
+                key={card.id}
+                className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12"
+              >
                 <IconCard
-                  key={card.id}
                   title={card.title}
                   img={card.imgSrc}
                   body={card.body}

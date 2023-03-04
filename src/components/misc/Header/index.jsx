@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Counter from "../Counter";
 import "./index.css";
 
 function Header() {
@@ -10,7 +11,10 @@ function Header() {
           You will learn how to use the most popular frontend library, and
           become a super Ninja developer.
         </p>
-        <Button type="light" text="Awesome!" />
+        <div className="btn-container">
+          <Button type="light" text="Awesome!" />
+          <Counter />
+        </div>
       </div>
     </div>
   );

@@ -26,3 +26,8 @@
   padding-top: 130px;
   padding-left: 80px;
 }
+
+.Header .btn-container {
+  display: flex;
+  align-items: center;
+}
