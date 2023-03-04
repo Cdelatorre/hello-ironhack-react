@@ -12,6 +12,7 @@ class Home extends Component {
     this.state = {
       loading: false,
       showCards: false,
+      arrCards: arrIconCard,
     };
   }
 
@@ -24,8 +25,18 @@ class Home extends Component {
       this.setState({
         loading: false,
         showCards: true,
+        arrCards: arrIconCard,
       });
     }, 2000);
+  };
+
+  handleDeleteCard = (id) => {
+    const newCards = this.state.arrCards.filter((card) => card.id !== id);
+
+    this.setState({
+      arrCards: newCards,
+      showCards: !!newCards.length,
+    });
   };
 
   render() {
@@ -40,14 +51,15 @@ class Home extends Component {
               <Button onClickFn={this.fetchCards}>Fetch cards</Button>
             )
           ) : (
-            <div className="icons-row row">
-              {arrIconCard.map((card) => {
+            <div className="icons-row row mb-4">
+              {this.state.arrCards.map((card) => {
                 return (
                   <div
                     key={card.id}
                     className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12"
                   >
                     <IconCard
+                      onDelete={(event) => this.handleDeleteCard(card.id)}
                       title={card.title}
                       img={card.imgSrc}
                       body={card.body}
