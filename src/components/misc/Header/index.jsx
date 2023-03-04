@@ -12,7 +12,7 @@ function Header() {
           become a super Ninja developer.
         </p>
         <div className="btn-container">
-          <Button type="light" text="Awesome!" />
+          <Button type="light">Awesome!</Button>
           <Counter />
         </div>
       </div>
