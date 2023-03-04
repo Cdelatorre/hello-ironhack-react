@@ -1,0 +1,28 @@
+.Header {
+  background-color: #1f2535;
+  height: 600px;
+  color: white;
+  background-image: url('./../../../assets/img/react-logo.svg')
+}
+
+.Header h1 {
+  font-size: 80px;
+  width: 500px;
+  letter-spacing: -1px;
+  line-height: 75px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.Header p {
+  font-size: 20px;
+  width: 300px;
+  line-height: 25px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+.Header .header-content {
+  padding-top: 130px;
+  padding-left: 80px;
+}

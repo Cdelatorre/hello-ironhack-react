@@ -1,0 +1,16 @@
+.IconCard {
+  width: 250px;
+}
+
+.IconCard img {
+  width: 130px;
+}
+
+.IconCard h2 {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.IconCard p {
+  margin-top: 0;
+}
